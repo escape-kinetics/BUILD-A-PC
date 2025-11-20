@@ -1,0 +1,204 @@
+.builder-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+.builder-page h2 {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.save-build-bar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 10px;
+}
+
+.save-build-bar input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+.save-build-bar input:focus {
+  outline: 2px solid var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.save-build-bar button {
+  background-color: var(--color-success);
+  color: var(--color-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.save-build-bar button:hover {
+  background-color: var(--color-success-dark);
+}
+
+/* Main Part Table */
+.part-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden; /* For border-radius */
+}
+
+.part-table th,
+.part-table td {
+  padding: 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.part-table th {
+  background-color: var(--color-bg);
+  width: 170px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.part-table tr:last-child td,
+.part-table tr:last-child th {
+  border-bottom: none;
+}
+
+.part-row-selected td {
+  background-color: #f0fff0; /* Light green */
+}
+
+.part-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.part-desc {
+  font-size: 0.9em;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+}
+
+.part-price {
+  width: 150px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.choose-button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 500;
+}
+.choose-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.remove-button {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  font-weight: 500;
+}
+.remove-button:hover {
+  background-color: var(--color-danger-dark);
+}
+
+/* TDP / Totals Row */
+.total-tdp-row th {
+  font-size: 1.1rem;
+}
+.total-tdp-row strong {
+  font-size: 1.3rem;
+  color: var(--color-text);
+}
+.tdp-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tdp-indicator {
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.tdp-neutral {
+  background-color: var(--color-info);
+  color: var(--color-info-dark);
+}
+.tdp-good {
+  background-color: var(--color-success-light);
+  color: var(--color-success-dark);
+}
+.tdp-warning {
+  background-color: var(--color-warning-light);
+  color: var(--color-warning-dark);
+}
+.tdp-bad {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger-dark);
+}
+
+
+/* Compatibility Report Section */
+.incompatibility-section {
+  margin-top: 2rem;
+}
+
+.compat-list {
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.compat-list h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid;
+}
+
+.compat-list.info {
+  background-color: var(--color-info);
+  color: var(--color-info-dark);
+  border-bottom-color: #c8cbcf;
+}
+
+.compat-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.compat-list li {
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.compat-list li strong {
+  margin-right: 0.5rem;
+}
+
+.compat-item-success {
+  background-color: var(--color-success-light);
+  color: var(--color-success-dark);
+}
+
+.compat-item-error {
+  background-color: var(--color-danger-light);
+  color: var(--color-danger-dark);
+}
